@@ -1,0 +1,91 @@
+@mixin heading
+    font-size: 22px
+
+@mixin center
+    display: flex
+    justify-content: center
+    align-items: center
+    
+*
+    font-family: "Hanken Grotesk", sans-serif
+    font-size: 18px
+    font-weight: 500
+    
+body
+    width: 100vw
+    height: 100vh
+    @include center
+    
+#main
+    width: 750px
+    height: 510px
+    display: flex
+    border-radius: 30px
+    border: 1px solid black
+
+.content
+    width: 50%
+    height: 100%
+
+#result
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%))
+    border-radius: 30px
+
+.heading-div
+    // background-color: yellow
+    height: 100px
+
+#result__heading
+    @include center
+
+.h2
+    @include heading
+
+#result__h2
+    color: hsl(241, 100%, 89%)
+
+#summary__central-div
+    height: 300px
+
+#result__central-div
+    display: flex
+    justify-content: center
+
+#result__score-container
+    width: 200px
+    height: 200px
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0))
+    border-radius: 100px
+    @include center
+    flex-direction: column
+
+#result__score-num
+    font-size: 65px
+    font-weight: 700
+    color: #fff
+
+#result__score-out-of
+    color: hsla(241, 100%, 89%, 0.5)
+    margin-top: 5px
+
+#result__bottom-div
+    height: 210px
+    @include center
+    flex-direction: column
+
+#result__score-p
+    color: #fff
+    font-size: 29px
+
+#result__description
+    width: 229px
+    margin-top: 18px
+    text-align: center
+    color: hsla(241, 100%, 89%, 0.9)
+    font-weight: 400
+    font-size: 16px
+    line-height: 21px
+
+#summary__bottom-div
+    // background-color: red
+    height: 150px

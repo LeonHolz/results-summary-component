@@ -3,25 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
     <title>Results summary component</title>
 </head>
 <body>
     <main id="main">
         <section id="result" class="content">
-            <div class="heading-div">
-                <h2 id="result__h2">Your Result</h2>
+            <div class="heading-div" id="result__heading">
+                <h2 class="h2" id="result__h2">Your Result</h2>
             </div>
-            <div class="central-div">
+            <div id="result__central-div">
                 <div id="result__score-container">
                     <p id="result__score-num">76</p>
                     <p id="result__score-out-of">of 100</p>
                 </div>
             </div>
+            <div id="result__bottom-div">
+                <p id="result__score-p">Great</p>
+                <p id="result__description">You scored higher than 65% of the people who have taken these tests.</p>
+            </div>
         </section>
         <section id="summary" class="content">
-
+            <div class="heading-div">
+                <h2 class="h2" id="summary__h2">Summary</h2>
+            </div>
+            <div id="summary__central-div">
+                <div class="summary__result-container" id="summary__reaction-container">
+                    <img src="img/icon-reaction.svg" class="summary__result-icon">
+                    <p class="summary__result-text" id="summary__reaction-text">Reaction</p>
+                    <p class="summary__result-out-of">
+                        <span class="summary__result-score">80</span>
+                        / 100
+                    </p>
+                </div>
+                <div class="summary__result-container" id="summary__memory-container">
+                    <img src="img/icon-memory.svg" class="summary__result-icon">
+                    <p class="summary__result-text" id="summary__memory-text">Memory</p>
+                    <p class="summary__result-out-of">
+                        <span class="summary__result-score">92</span>
+                        / 100
+                    </p>
+                </div>
+                <div class="summary__result-container" id="summary__verbal-container">
+                    <img src="img/icon-verbal.svg" class="summary__result-icon">
+                    <p class="summary__result-text" id="summary__verbal-text">Verbal</p>
+                    <p class="summary__result-out-of">
+                        <span class="summary__result-score">61</span>
+                        / 100
+                    </p>
+                </div>
+                <div class="summary__result-container" id="summary__visual-container">
+                    <img src="img/icon-visual.svg" class="summary__result-icon">
+                    <p class="summary__result-text" id="summary__visual-text">Visual</p>
+                    <p class="summary__result-out-of">
+                        <span class="summary__result-score">72</span>
+                        / 100
+                    </p>
+                </div>
+            </div>
+            <div id="summary__bottom-div">
+                <button id="summary__button">Continue</button>
+            </div>
         </section>
     </main>
 </body>
