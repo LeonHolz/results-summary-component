@@ -17,7 +17,7 @@ body {
   height: 510px;
   display: flex;
   border-radius: 30px;
-  border: 1px solid black;
+  box-shadow: 10px 20px 50px hsl(221, 100%, 96%);
 }
 
 .content {
@@ -30,31 +30,117 @@ body {
   border-radius: 30px;
 }
 
+#summary {
+  display: flex;
+  justify-content: center;
+}
+
+#wrapper {
+  width: 300px;
+}
+
 .heading-div {
   height: 100px;
 }
 
-#result__heading {
+#result__heading-div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+#summary__heading-div {
+  display: flex;
+  align-items: center;
+}
+
 .h2 {
-  font-size: 22px;
+  font-size: 23px;
 }
 
 #result__h2 {
   color: hsl(241, 100%, 89%);
 }
 
+#summary__h2 {
+  font-weight: 600;
+  color: hsl(224, 30%, 27%);
+}
+
 #summary__central-div {
-  height: 300px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #result__central-div {
   display: flex;
   justify-content: center;
+}
+
+.summary__result-container {
+  background-color: red;
+  height: 59px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#summary__reaction-container {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+#summary__reaction-text {
+  color: hsl(0, 100%, 67%);
+}
+
+#summary__memory-container {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+#summary__memory-text {
+  color: hsl(39, 100%, 56%);
+}
+
+#summary__verbal-container {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+#summary__verbal-text {
+  color: hsl(166, 100%, 37%);
+}
+
+#summary__visual-container {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+#summary__visual-text {
+  color: hsl(234, 85%, 45%);
+}
+
+.summary__reaction-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.summary__result-icon {
+  margin-left: 15px;
+}
+
+.summary__result-text {
+  margin-left: 15px;
+}
+
+.summary__result-out-of {
+  color: hsla(224, 30%, 27%, 0.6);
+  margin-right: 15px;
+}
+
+.summary__result-score {
+  color: hsl(224, 30%, 27%);
 }
 
 #result__score-container {
@@ -87,6 +173,18 @@ body {
   flex-direction: column;
 }
 
+#summary__bottom-div {
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#summary__button {
+  height: 50px;
+  width: 100%;
+}
+
 #result__score-p {
   color: #fff;
   font-size: 29px;
@@ -100,8 +198,4 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-}
-
-#summary__bottom-div {
-  height: 150px;
 }/*# sourceMappingURL=styles.css.map */

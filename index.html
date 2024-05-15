@@ -14,7 +14,7 @@
 <body>
     <main id="main">
         <section id="result" class="content">
-            <div class="heading-div" id="result__heading">
+            <div class="heading-div" id="result__heading-div">
                 <h2 class="h2" id="result__h2">Your Result</h2>
             </div>
             <div id="result__central-div">
@@ -29,37 +29,46 @@
             </div>
         </section>
         <section id="summary" class="content">
-            <div class="heading-div">
+            <div id="wrapper">
+                <div class="heading-div" id="summary__heading-div">
                 <h2 class="h2" id="summary__h2">Summary</h2>
             </div>
             <div id="summary__central-div">
                 <div class="summary__result-container" id="summary__reaction-container">
-                    <img src="img/icon-reaction.svg" class="summary__result-icon">
-                    <p class="summary__result-text" id="summary__reaction-text">Reaction</p>
+                    <div class="summary__reaction-wrapper">
+                        <img src="img/icon-reaction.svg" class="summary__result-icon">
+                        <p class="summary__result-text" id="summary__reaction-text">Reaction</p>
+                    </div>
                     <p class="summary__result-out-of">
                         <span class="summary__result-score">80</span>
                         / 100
                     </p>
                 </div>
                 <div class="summary__result-container" id="summary__memory-container">
-                    <img src="img/icon-memory.svg" class="summary__result-icon">
-                    <p class="summary__result-text" id="summary__memory-text">Memory</p>
+                    <div class="summary__reaction-wrapper">
+                        <img src="img/icon-memory.svg" class="summary__result-icon">
+                        <p class="summary__result-text" id="summary__memory-text">Memory</p>
+                    </div>
                     <p class="summary__result-out-of">
                         <span class="summary__result-score">92</span>
                         / 100
                     </p>
                 </div>
                 <div class="summary__result-container" id="summary__verbal-container">
-                    <img src="img/icon-verbal.svg" class="summary__result-icon">
-                    <p class="summary__result-text" id="summary__verbal-text">Verbal</p>
+                    <div class="summary__reaction-wrapper">
+                        <img src="img/icon-verbal.svg" class="summary__result-icon">
+                        <p class="summary__result-text" id="summary__verbal-text">Verbal</p>
+                    </div>
                     <p class="summary__result-out-of">
                         <span class="summary__result-score">61</span>
                         / 100
                     </p>
                 </div>
                 <div class="summary__result-container" id="summary__visual-container">
-                    <img src="img/icon-visual.svg" class="summary__result-icon">
-                    <p class="summary__result-text" id="summary__visual-text">Visual</p>
+                    <div class="summary__reaction-wrapper">
+                        <img src="img/icon-visual.svg" class="summary__result-icon">
+                        <p class="summary__result-text" id="summary__visual-text">Visual</p>
+                    </div>
                     <p class="summary__result-out-of">
                         <span class="summary__result-score">72</span>
                         / 100
@@ -68,6 +77,7 @@
             </div>
             <div id="summary__bottom-div">
                 <button id="summary__button">Continue</button>
+            </div>
             </div>
         </section>
     </main>
