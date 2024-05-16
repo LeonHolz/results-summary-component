@@ -183,6 +183,15 @@ body {
 #summary__button {
   height: 50px;
   width: 100%;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  color: #fff;
+  border-radius: 25px;
+}
+
+#summary__button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
 #result__score-p {
